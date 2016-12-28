@@ -5,9 +5,9 @@ package com.mophsic.sort;
  * @author xiaofei
  * @date 2016/12/28
  */
-public class SortedAge {
+final class SortedAge {
 
-    public void sortAge(int[] ages) {
+    void sortAge(int[] ages) {
         // 先定义一个数组用于存储所有年龄段的人的数量{0~99}
         int[] numOfAge = new int[100];
         for (int age : ages) {
