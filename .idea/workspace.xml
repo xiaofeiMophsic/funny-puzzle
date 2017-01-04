@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f035e2a1-dcfa-416b-b16f-40fd2fcf7b6e" name="Default" comment="添加ignore">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mophsic/loop/Binary.java" afterPath="$PROJECT_DIR$/src/com/mophsic/loop/Binary.java" />
     </list>
     <ignored path="funny-puzzle.iws" />
@@ -26,8 +27,8 @@
       <file leaf-file-name="Binary.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/mophsic/loop/Binary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+            <state relative-caret-position="71">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,7 +184,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="D:/intelijworkspace" />
-    <property name="SearchEverywhereHistoryKey" value="Deque&#9;PSI&#9;JAVA://java.util.Deque&#10;Array&#9;FILE&#9;jar://D:/Program Files/Java/jdk1.8.0_74/src.zip!/java/util/ArrayList.java&#10;ArrayLi&#9;FILE&#9;jar://D:/Program Files/Java/jdk1.8.0_74/src.zip!/java/util/ArrayList.java&#10;ArrayList&#9;PSI&#9;JAVA://java.util.ArrayList" />
+    <property name="SearchEverywhereHistoryKey" value="Math&#9;PSI&#9;JAVA://java.lang.Math&#10;Deque&#9;PSI&#9;JAVA://java.util.Deque&#10;Array&#9;FILE&#9;jar://D:/Program Files/Java/jdk1.8.0_74/src.zip!/java/util/ArrayList.java&#10;ArrayLi&#9;FILE&#9;jar://D:/Program Files/Java/jdk1.8.0_74/src.zip!/java/util/ArrayList.java&#10;ArrayList&#9;PSI&#9;JAVA://java.util.ArrayList" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
@@ -1081,10 +1082,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_74/src.zip!/java/lang/StrictMath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="644" column="52" selection-start-line="644" selection-start-column="52" selection-end-line="644" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_74/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="643" column="27" selection-start-line="643" selection-start-column="27" selection-end-line="643" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mophsic/loop/Binary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+        <state relative-caret-position="71">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -14,7 +14,6 @@ public class Binary {
         if (n == 0) {
             return 0;
         }
-
         int count = 0;
 
         do {
