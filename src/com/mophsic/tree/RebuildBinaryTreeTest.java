@@ -31,7 +31,7 @@ public class RebuildBinaryTreeTest {
     public void construct(){
         BinaryTreeNode<Integer> rootNode = RebuildBinaryTree.construct(preOrder, inOrder);
         TraversalTree.postTraversalWithRecursive(rootNode);
-
+        TraversalTree.inorderTraversalWithStack(rootNode);
         TraversalTree.postTraversalWithRecursive(RebuildBinaryTree.construct(new int[]{1}, new int[]{1}));
     }
 

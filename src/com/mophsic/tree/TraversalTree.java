@@ -1,16 +1,20 @@
 package com.mophsic.tree;
 
+import com.mophsic.loop.Binary;
+
+import java.util.Stack;
+
 /**
  * @author xiaofei
  * @date 2016/12/18
  */
-public class TraversalTree {
+class TraversalTree {
 
     private TraversalTree(){
         throw new AssertionError();
     }
 
-    public static <T> void postTraversalWithRecursive(BinaryTreeNode<T> root){
+    static <T> void postTraversalWithRecursive(BinaryTreeNode<T> root){
         if (root == null)
             throw new IllegalArgumentException("Root can not be null");
 
@@ -22,5 +26,26 @@ public class TraversalTree {
             postTraversalWithRecursive(root.mRightNode);
         // 遍历根
         System.out.print(root.mValue);
+    }
+
+    /**
+     * 使用 {@link java.util.Stack} 实现二叉树中序遍历
+     * @param <T> 结点类型
+     */
+    static <T> void inorderTraversalWithStack(BinaryTreeNode<T> root){
+        if (root == null) {
+            throw new IllegalArgumentException("root can not be null");
+        }
+        // 对递归实现的模拟
+        Stack<BinaryTreeNode<T>> nodes = new Stack<>();
+        while (root != null || !nodes.isEmpty()) {
+            while (root != null) {
+                nodes.push(root);
+                root = root.mLeftNode;
+            }
+            root = nodes.pop();
+            System.out.println(root.mValue);
+            root = root.mRightNode;
+        }
     }
 }
