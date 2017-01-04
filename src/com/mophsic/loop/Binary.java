@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * 求整数二进制中1的个数
+ * 求整数二进制中1的个数。（整数与其自身减一作与运算之后可以将最后一个1转换为0）
  * @author xiaofei
  * @date 2017/1/4
  */
