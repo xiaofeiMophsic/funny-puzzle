@@ -14,7 +14,7 @@ public class ReverseListTest {
     public void reverseList() throws Exception {
         ReverseList linked = new ReverseList();
         Integer[] data = {1, 2, 2, 3, 4, 5, 76, 7};
-        LinkedNode<Integer> head = linked.initList(data);
+        LinkedNode<Integer> head = ListUtil.initList(data);
         LinkedNode<Integer> reversedList = linked.reverseListRecursively(head, null);
         while (reversedList != null) {
             System.out.printf(" %d", reversedList.value);

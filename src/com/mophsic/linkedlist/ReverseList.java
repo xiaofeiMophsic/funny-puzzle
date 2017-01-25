@@ -35,21 +35,4 @@ public class ReverseList {
             lastNode = reverseListRecursively(tempNode, head);
         return lastNode;
     }
-
-    @SuppressWarnings("unchecked")
-    <T> LinkedNode<T> initList(Object[] data){
-        if (data == null || data.length == 0)
-            return null;
-        LinkedNode<T> head = new LinkedNode();
-        head.value = (T) data[0];
-
-        LinkedNode<T> current = head;
-        for(int i = 1; i < data.length; i++) {
-            LinkedNode<T> node = new LinkedNode();
-            node.value = (T) data[i];
-            current.nextNode = node;
-            current = node;
-        }
-        return head;
-    }
 }

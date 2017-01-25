@@ -8,4 +8,11 @@ public class LinkedNode<T> {
 
     T value;
     LinkedNode<T> nextNode;
+
+    LinkedNode(T value) {
+        this.value = value;
+    }
+
+    public LinkedNode() {
+    }
 }
