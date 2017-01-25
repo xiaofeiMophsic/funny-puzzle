@@ -37,7 +37,7 @@ public class RebuildBinaryTree {
             // 构建右子树
             if ((inOrder.length - 1) - posOfRoot > 0) {
                 int[] rightInOrder = Arrays.copyOfRange(inOrder, posOfRoot + 1, inOrder.length);
-                int[] rightPreOrder = Arrays.copyOfRange(preOrder, preOrder.length - (leftPreOrderLength + 1), preOrder.length);
+                int[] rightPreOrder = Arrays.copyOfRange(preOrder, leftPreOrderLength + 1, preOrder.length);
                 binaryTreeNode.mRightNode = constructCore(rightPreOrder, rightInOrder);
             } else {
                 binaryTreeNode.mRightNode = null;

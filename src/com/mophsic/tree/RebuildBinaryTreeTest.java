@@ -39,4 +39,13 @@ public class RebuildBinaryTreeTest {
     public void constructException(){
         RebuildBinaryTree.construct(null, null);
     }
+
+    @Test
+    public void subTree(){
+        BinaryTreeNode<Integer> rootNode1 = RebuildBinaryTree.construct(preOrder, inOrder);
+        BinaryTreeNode<Integer> rootNode2 = RebuildBinaryTree.construct(new int[]{3, 5, 6}, new int[]{5, 3, 6});
+
+        boolean actual = SubTree.hasSubTree(rootNode1, rootNode2);
+        Assert.assertTrue(actual);
+    }
 }
