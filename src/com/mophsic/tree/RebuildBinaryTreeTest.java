@@ -6,9 +6,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-import java.util.Collections;
-import java.util.List;
-
 /**
  * @author xiaofei
  * @date 2016/12/18
@@ -47,5 +44,12 @@ public class RebuildBinaryTreeTest {
 
         boolean actual = SubTree.hasSubTree(rootNode1, rootNode2);
         Assert.assertTrue(actual);
+    }
+
+    @Test
+    public void mirrorTree(){
+        BinaryTreeNode<Integer> tree = RebuildBinaryTree.construct(preOrder, inOrder);
+        MirrorTree.mirrorTreeRecursively(tree);
+        TraversalTree.inorderTraversalWithStack(tree);
     }
 }
