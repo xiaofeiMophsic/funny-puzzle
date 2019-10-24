@@ -1,6 +1,7 @@
 package com.mophsic.linkedlist;
 
-import com.sun.istack.internal.Nullable;
+
+import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,6 +36,31 @@ class ListUtil {
             current.nextNode = node;
             current = node;
         }
+        return head;
+    }
+
+    /**
+     * 使用给定的数据构造链表。
+     * @param data 数据集合
+     * @param <T> 数据类型
+     * @return 链表头
+     */
+    @SuppressWarnings("unchecked")
+    static <T> LinkedNode<T> initCycleList(Object[] data){
+        if (data == null || data.length == 0)
+            return null;
+        LinkedNode<T> head = new LinkedNode();
+        head.value = (T) data[0];
+
+        LinkedNode<T> current = head;
+        for(int i = 1; i < data.length; i++) {
+            LinkedNode<T> node = new LinkedNode();
+            node.value = (T) data[i];
+            current.nextNode = node;
+            current = node;
+        }
+        // 构造一个尾节点指向第1个节点的环
+        current.nextNode = head.nextNode;
         return head;
     }
 

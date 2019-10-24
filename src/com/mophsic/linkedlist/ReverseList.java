@@ -35,4 +35,37 @@ public class ReverseList {
             lastNode = reverseListRecursively(tempNode, head);
         return lastNode;
     }
+
+    <T> LinkedNode<T> reverse2(LinkedNode<T> head) {
+        LinkedNode<T> node = head;
+        LinkedNode<T> prev = null;
+        LinkedNode<T> next = head.nextNode;
+        LinkedNode<T> newHead = null;
+
+        while (node != null) {
+            next = node.nextNode;
+            if (next == null) {
+                newHead = node;
+            }
+            node.nextNode = prev;
+            prev = node;
+            node = next;
+        }
+
+        return newHead;
+    }
+
+    static <T> boolean checkCycle(LinkedNode<T> head, LinkedNode<T> head2) {
+        if (head == null || head2 == null) {
+            return false;
+        }
+        if (head.nextNode == null || head2.nextNode == null || head2.nextNode.nextNode == null) {
+            return false;
+        }
+        if (head == head2) {
+            return true;
+        }
+
+        return checkCycle(head.nextNode, head2.nextNode.nextNode);
+    }
 }

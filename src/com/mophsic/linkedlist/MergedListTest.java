@@ -3,7 +3,6 @@ package com.mophsic.linkedlist;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import sun.awt.image.ImageWatched;
 
 import java.util.List;
 
